@@ -1,0 +1,322 @@
+/* --- Header Styles --- */
+
+/* Offer Header */
+.offer-header {
+  background-color: #e85992;
+  color: white;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0;
+}
+
+/* Main Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  height: 80px;
+  max-width: 100%;
+}
+
+/* Navbar */
+.nav {
+  display: none; /* Hidden by default on mobile */
+  gap: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hidden by default */
+}
+
+/* --- Media Queries --- */
+
+/* Mobile Screens (up to 767px) */
+@media (max-width: 767px) {
+  .main-header {
+    justify-content: center;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px; /* Position on the left */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+    display: flex; /* Show nav when active */
+  }
+
+  .icons {
+    display: none; /* Hide icons */
+  }
+
+  .offer-header {
+    font-size: 10px; /* Adjust font size */
+    padding: 5px 0; /* Adjust padding */
+  }
+
+  .logo img {
+    height: 60px; /* Adjust logo size */
+  }
+
+  .video-wrapper video {
+    width: 100%; /* Full width for video */
+  }
+
+  .top-right-icon {
+    width: 25px; /* Adjust icon size */
+    top: 5px; /* Adjust vertical position */
+    right: 5px; /* Adjust horizontal position */
+  }
+}
+
+/* iPad (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-header {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    max-width: 180px;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+
+  .nav {
+    display: flex; /* Show nav by default */
+    gap: 20px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+}
+
+/* Laptop (1025px to 1366px) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .main-header {
+    padding: 10px 30px;
+  }
+
+  .logo img {
+    max-width: 200px;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger menu */
+  }
+
+  .nav {
+    display: flex; /* Show nav by default */
+    gap: 25px;
+  }
+
+  .nav a {
+    font-size: 16px;
+  }
+}
+
+/* Desktop (1367px and up) */
+@media (min-width: 1367px) {
+  .main-header {
+    padding: 10px 50px;
+  }
+
+  .logo img {
+    max-width: 220px;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger menu */
+  }
+
+  .nav {
+    display: flex; /* Show nav by default */
+    gap: 30px;
+  }
+
+  .nav a {
+    font-size: 18px;
+  }
+}
+
+/* Collection Section (up to 992px) */
+@media (max-width: 992px) {
+  .collection {
+    grid-template-columns: repeat(3, 1fr); /* 3 items in a row */
+  }
+
+  .collection .d-item:nth-child(n + 4) {
+    display: none; /* Hide items beyond the 3rd */
+  }
+
+  .collection.show-all .d-item {
+    display: flex; /* Show all items when .show-all is applied */
+  }
+}
+
+/* Footer Styles for Small Screens */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align sections */
+  }
+
+  .footer-section {
+    margin: 10px 0; /* Reduce margin */
+  }
+
+  .social-media {
+    flex-direction: column; /* Stack social media buttons vertically */
+    align-items: center; /* Center align buttons */
+  }
+
+  .social-media a {
+    margin: 5px 0; /* Reduce margin around buttons */
+  }
+
+  .app-buttons {
+    display: flex;
+    flex-direction: column; /* Stack app buttons vertically */
+    align-items: center; /* Center align app buttons */
+  }
+
+  .footer-text {
+    text-align: center; /* Center align text */
+    margin-top: 10px; /* Adjust margin */
+  }
+}
+
+/* Footer Styles for Mobile Screens (up to 480px) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .footer-section h2,
+  .footer-section h3 {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .footer-section p {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .footer-section ul li {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .social-media a img {
+    width: 70px; /* Adjust size */
+    height: 23px; /* Adjust size */
+  }
+
+  .app-buttons img {
+    width: 120px; /* Adjust size */
+    height: 40px; /* Adjust size */
+  }
+
+  .average-rating {
+    font-size: 0.7rem; /* Reduce font size */
+  }
+
+  .reviews-carousel {
+    padding: 5px; /* Reduce padding */
+  }
+
+  .review {
+    min-width: 180px; /* Further reduce minimum width */
+    margin-right: 5px; /* Further reduce margin-right */
+  }
+
+  .review .reviewer-details strong {
+    font-size: 0.6rem; /* Further reduce font size */
+  }
+
+  .review-text {
+    font-size: 0.6rem; /* Further reduce font size */
+  }
+
+  .write-review {
+    padding: 8px 12px; /* Further adjust padding */
+    font-size: 0.8rem; /* Further reduce font size */
+  }
+
+  .custom-section p {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .custom-section .about {
+    font-size: 12px; /* Further reduce font size */
+    padding: 10px; /* Further adjust padding */
+  }
+
+  .custom-section button {
+    padding: 0px 10px; /* Further adjust padding */
+    font-size: 10px; /* Further reduce font size */
+  }
+
+  .info-item img {
+    width: 20px; /* Further adjust image size */
+    height: 20px; /* Further adjust image size */
+  }
+
+  .info-item p {
+    font-size: 9px; /* Further reduce font size */
+  }
+}

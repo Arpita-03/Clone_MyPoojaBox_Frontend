@@ -1,0 +1,724 @@
+/* Base Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Header Styles --- */
+
+/* Offer Header */
+.offer-header {
+  background-color: #e85992;
+  color: white;
+  text-align: center;
+  padding: 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* Main Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Logo */
+.logo img {
+  height: 80px;
+  max-width: 100%;
+  flex: 1;
+}
+
+/* Navbar */
+.nav {
+  display: none; /* Hidden on mobile */
+  gap: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+.nav.active {
+  display: flex; /* Show and stack items vertically */
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 20px;
+  color: #333;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* --- Video Section Styles --- */
+
+/* Video Container */
+.video-container {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.video-wrapper video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.top-right-icon {
+  position: absolute;
+  top: 10px; /* Adjust this value to move the icon vertically */
+  right: 10px; /* Adjust this value to move the icon horizontally */
+  width: 30px; /* Adjust the size of the icon */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer; /* Optional: changes cursor to pointer on hover */
+}
+
+/* --- Carousel Styles --- */
+
+/* Carousel Container */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 30px 80px; /* Adjusted padding for arrows */
+  margin: 0 auto; /* Center the container */
+  max-width: 1400px; /* Adjust based on your design */
+}
+
+/* Carousel */
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  gap: 15px;
+  overflow: auto;
+  align-items: center;
+  transition: transform 0.5s ease;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Carousel Item */
+.c-item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.c-item img {
+  width: 125px; /* Adjusted size */
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Carousel Item Text */
+.c-item p {
+  font-size: 14px; /* Set the desired font size */
+  text-transform: uppercase; /* Capitalize all letters */
+  margin: 0; /* Remove default margins */
+  font-weight: bold; /* Optional: Make text bold */
+  text-align: center; /* Center-align the text */
+  color: #202020; /* Optional: Set text color */
+}
+
+/* Carousel Arrows */
+.carousel-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2; /* Ensure arrows are above carousel items */
+  padding: 10px;
+}
+
+.left-arrow {
+  left: 10px; /* Position closer to the edge */
+  background-color: #ffffff;
+  color: #d1427b;
+}
+
+.right-arrow {
+  right: 10px; /* Position closer to the edge */
+  background-color: #ffffff;
+  color: #d1427b;
+}
+
+/* --- Collection Styles --- */
+
+/* Collection Container */
+.collection-container {
+  position: relative; /* Ensure the button is positioned relative to this container */
+  margin: 0 auto;
+  padding: 20px 80px 60px;
+  max-width: 1400px;
+}
+
+/* Collection Title */
+.collection-title {
+  font-size: 20px; /* Slightly reduced font size */
+  font-family: "EB Garamond", Baskerville, Caslon, serif;
+  text-align: left;
+  margin-bottom: 10px; /* Reduced margin */
+  color: #202020;
+}
+
+/* View All Button */
+.view-all {
+  background-color: rgb(211, 19, 79, 1);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute; /* Position the button */
+  top: 10px; /* Adjust to align with the title */
+  right: 60px; /* Adjust the right margin */
+  font-size: 10px;
+}
+
+.view-all:hover {
+  background-color: #e85992;
+}
+
+/* Collection */
+.collection {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Keep all 6 items in one row */
+  gap: 20px;
+  width: 100%;
+  align-items: start; /* Align items to the start */
+}
+
+/* Collection Item */
+.d-item {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden; /* Hide overflow of items */
+}
+
+.d-item.hidden {
+  display: none !important; /* Force hide using !important */
+}
+
+.collection.show-all .d-item.hidden {
+  display: block !important; /* Force show using !important */
+}
+
+.collection.show-all .d-item {
+  display: flex; /* Ensure all items are shown */
+}
+
+.d-item img {
+  width: 100%; /* Increase the size of the images */
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 0;
+  display: block; /* Ensures that the image behaves correctly */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.d-item .main-image {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s; /* Smooth transition for opacity change */
+}
+
+.d-item .hover-image {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure it is above the main image but below text */
+}
+
+.d-item:hover .main-image {
+  opacity: 0; /* Hide the main image */
+}
+
+.d-item:hover .hover-image {
+  display: block; /* Show the hover image */
+}
+
+/* Collection Item Text */
+/* Ensure no hover effects on the paragraph inside collection items */
+.collection .d-item p {
+  transition: none; /* Prevents transitions */
+  color: inherit; /* Maintains text color */
+  background-color: transparent; /* Maintains background color */
+}
+
+.d-item p {
+  font-size: 14px; /* Minimized text size */
+  margin: 5px 0; /* Reduced margin */
+  color: #333;
+  overflow: hidden; /* Hides overflow text */
+  padding: 0 10px;
+  text-overflow: ellipsis; /* Adds ellipsis (...) */
+  white-space: nowrap; /* Prevents text wrapping */
+  transition: none;
+}
+
+.collection .d-item:hover p {
+  /* Ensure the paragraph does not change on hover */
+  color: inherit; /* Maintain the original text color */
+  background-color: transparent; /* Maintain original background color */
+}
+
+/* Collection Item Price */
+.d-item .price {
+  position: absolute;
+  bottom: 70px; /* Aligns the price to the bottom of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px; /* Reduced text size */
+  background-color: transparent; /* Semi-transparent background */
+  color: #fff; /* White color for the text */
+  padding: 5px 10px; /* Add some padding for better readability */
+  text-align: center; /* Center the text */
+  font-weight: bold; /* Make the price text bold */
+  box-sizing: border-box; /* Ensures padding is within the image bounds */
+  max-width: 90%;
+  white-space: nowrap;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  background-color: rgb(211, 19, 79, 1);
+  color: #fff;
+  border: none;
+  padding: 8px 16px; /* Reduced padding */
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 5px;
+  position: relative; /* Ensure button positioning does not affect text */
+  z-index: 4; /* Ensure it is above other elements if needed */
+  transition: none; /* Ensure no transition affects the button */
+}
+
+.add-to-cart:hover {
+  background-color: #d1427b;
+}
+
+/* Review Section */
+.review-section {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.average-rating {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  z-index: 1; /* Ensure it's on top of other elements */
+}
+
+.rating-container {
+  display: flex;
+  align-items: center; /* Vertically align stars and the rating number */
+}
+
+.stars i {
+  color: #ff0077; /* Pink color for stars */
+  font-size: 0.8rem; /* Decrease the size of the stars */
+  margin-left: 0px; /* Reduce space between stars */
+}
+
+.average-rating h2 {
+  font-size: 0.8rem;
+  margin: 0;
+  margin-right: 8px; /* Add space between stars and rating number */
+}
+
+.reviews-count {
+  font-size: 0.8rem;
+  margin-left: 16px; /* Space between stars and review count */
+}
+
+.average-rating p {
+  font-size: 0.8rem;
+  margin: 5px 0;
+}
+
+.reviews-carousel {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  margin-top: 50px; /* Increase margin-top to make space for .average-rating */
+  z-index: 0; /* Ensure it's below the .average-rating */
+}
+.carousel-wrapper {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel-arrow {
+  background: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.carousel-arrow:hover {
+  color: #ff0077;
+}
+
+.review {
+  min-width: 250px;
+  margin-right: 15px;
+  padding: 15px;
+  text-align: left;
+  background-color: transparent; /* Remove background color */
+  border-radius: 0; /* Remove border radius */
+  overflow: hidden; /* Hide overflow text */
+}
+
+.review .reviewer-details strong {
+  font-size: 0.8rem; /* Smaller font size */
+  text-transform: uppercase; /* Capitalize all letters */
+  display: block; /* Ensure name is displayed on its own line */
+  margin-bottom: 1px; /* Space between name and date */
+}
+
+.reviewer-details span {
+  font-size: 0.7rem;
+  color: #4e4e4e;
+}
+.review-text {
+  font-size: 0.8rem;
+  color: #4e4e4e;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviewer-initial {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.reviewer-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.write-review {
+  background-color: #ff0077;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: absolute; /* Absolute positioning */
+  top: 10px; /* Align with average rating text vertically */
+  right: 10px; /* Align to the right edge */
+  font-size: small;
+}
+
+.write-review:hover {
+  background-color: #e6006f;
+}
+
+.custom-section {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.custom-section p {
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
+  font-family: "EB Garamond", Baskerville, Caslon, serif;
+  font-weight: bold;
+}
+
+.custom-section .about {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 30px; /* Adds 30px space on left and right */
+  color: #726f6f;
+}
+
+.custom-section button {
+  margin-top: 0px;
+  padding: 0px 20px;
+  background-color: transparent;
+  color: #720439;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.custom-section button:hover {
+  color: #720439;
+}
+
+/*Info-section*/
+
+.info-section {
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 10px 0; /* Adjust padding */
+  border: 1px solid #ccc; /* Add a border to the entire section */
+  border-collapse: separate; /* Ensure border appears correctly */
+  margin-bottom: 10px;
+}
+
+.info-item {
+  margin: 0 120px; /* Space between items */
+  text-align: center;
+  position: relative; /* Required for positioning the dividing line */
+}
+
+.info-item:not(:last-child)::after {
+  content: ""; /* Empty content for the line */
+  position: absolute;
+  top: 50%;
+  right: -40px; /* Position the line to the right of the item */
+  width: 1px; /* Line thickness */
+  height: 60%; /* Line height */
+  background-color: #bebebe; /* Line color */
+  transform: translateY(-50%); /* Center the line vertically */
+}
+
+.info-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.info-item p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+  color: #333;
+  margin: 0;
+  padding-top: 5px;
+}
+
+/* --- Footer Styles --- */
+
+/* Footer Styling */
+.footer {
+  position: relative; /* Fixes the footer to the bottom of the viewport */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e85992;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  visibility: hidden; /* Hidden by default */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition for appearing */
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffa5ab;
+  color: white;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.footer-section p {
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 30px; /* Adds space between the image above and social media buttons */
+}
+.social-media a {
+  margin-right: 30px;
+}
+
+.social-media a:last-child {
+  margin-right: 0; /* Removes margin from the last button */
+}
+
+.social-media img {
+  width: 90px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.footer-icon {
+  margin-left: 18px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: flex-start; /* Aligns content to the left */
+  align-items: center; /* Aligns items vertically */
+  padding: 20px 0; /* Adjusts padding */
+  background-color: #fbbdc1;
+  margin-top: 20px; /* Adds space between the social media buttons and this section */
+}
+
+.app-buttons a {
+  margin-right: 10px;
+}
+
+.app-buttons img {
+  width: 150px;
+  height: 50px;
+}
+
+.footer-text {
+  text-align: right; /* Aligns text to the left */
+  color: white;
+  margin-left: 20px; /* Adds space between app buttons and footer text */
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px; /* Size of the circle */
+  height: 70px; /* Size of the circle */
+  background-color: #e6006f; /* Circle color */
+  border-radius: 50%; /* Makes the element a circle */
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+}
+
+.chat-icon img {
+  width: 50px; /* Size of the image */
+  height: 50px; /* Size of the image */
+  border-radius: 15px; /* Keeps the original border radius */
+}
