@@ -5,4 +5,4 @@ Cloning of the Webpage: https://www.mypoojabox.in/
 ![Dashboard Image](Snapshots/Screenshot1.png)
 
 
-#### The webpage was built using HTML, CSS & Bootstrap V4.0
+#### The webpage was built using HTML, CSS & Js.
