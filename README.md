@@ -1,4 +1,4 @@
-#Shopify_Website_frontend_Clone
+# Shopify_Website_Frontend_Clone_MyPoojaBox
 
 Cloning of the Webpage: https://www.mypoojabox.in/
 
