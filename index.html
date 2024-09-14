@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Home Decor, Pooja Samagri, Rakhi, Eco Friendly Ganesha & Diwali</title>
+    <!-- Link to the Favicon -->
+    <link rel="icon" href="/images/icons/9.png" type="image/png" sizes="16x16">
+
+    <!-- Importing the CSS Code -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Importing the CSS responsiveness code -->
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <!-- Importing the CSS Bootstrap Code -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link to Google Fonts for custom font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Importing the JS Bootstrap Code -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Importing Fonts Awesome Kit -->
+    <script src="https://kit.fontawesome.com/4686dd3488.js" crossorigin="anonymous"></script>
+
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Add jQuery (using CDN) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Offer Text -->
+    <header class="offer-header">
+        <p>GET 10% OFF WITH CODE: ILOVEMPB</p>
+    </header>
+
+    <!-- Logo and Navigation -->
+    <div class="main-header">
+        <div class="logo">
+            <img src="/images/Title Image.png" alt="My Pooja Box">
+        </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <!-- Navigation Links -->
+        <nav class="nav">
+            <a href="#">Shop</a>
+            <a href="#">Home Decor</a>
+            <a href="#">Festive Decor</a>
+            <a href="#">Corporate Gifting</a>
+        </nav>
+        <!-- Icons -->
+        <div class="icons">
+            <img src="/images/icons/10.png" alt="search">
+            <img src="/images/icons/11.png" alt="shopping">
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video width="100%" autoplay muted loop>
+                <source src="/images/home video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- First icon (clickable) -->
+            <img src="/images/volume.png" alt="Icon" class="top-right-icon" id="icon1" onclick="showSecondIcon()">
+            <!-- Second icon (initially hidden) -->
+            <img src="/images/mute.png" alt="Second Icon" class="top-right-icon second-icon" id="icon2">
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <section class="carousel-container">
+        <button class="carousel-arrow left-arrow">&#8249;</button>
+        <div class="carousel">
+            <div class="c-item">
+                <img src="/images/caraousel/Evil Eye.png" alt="Item 1">
+                <p>EVIL EYE</p>
+            </div>
+            <div class="c-item">
+                <img src="/images/caraousel/Pooja Thali.png" alt="Item 2">
+                <p>POOJA THALI</p>
+            </div>
+            <div class="c-item">
+                <img src="/images/caraousel/Urlis.png" alt="Item 3">
+                <p>URLIS</p>
+            </div>
+            <div class="c-item">
+                <img src="/images/caraousel/Pyrit.png" alt="Item 4">
+                <p>PYRIT</p>
+            </div>
+            <div class="c-item">
+                <img src="/images/caraousel/Citrine.png" alt="Item 5">
+                <p>CITRINE</p>
+            </div>
+            <div class="c-item">
+                <img src="/images/caraousel/Chanting Box.png" alt="Item 6">
+                <p>CHANTING BOX</p>
+            </div>
+            <div class="c-item">
+                <img src="/images/caraousel/Amethyst.png" alt="Item 7">
+                <p>AMETHYST</p>
+            </div>
+            <div class="c-item">
+                <img src="/images/caraousel/Aura Cleansing.png" alt="Item 8">
+                <p>AURA CLEANSING</p>
+            </div>
+            <div class="c-item">
+                <img src="/images/caraousel/Clear Quartz.jpg" alt="Item 9">
+                <p>CLEAR QUARTZ</p>
+            </div>
+            <div class="c-item">
+                <img src="/images/caraousel/Moonstone.png" alt="Item 10">
+                <p>MOONSTONE</p>
+            </div>
+        </div>
+        <button class="carousel-arrow right-arrow">&#8250;</button>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="collection-container">
+        <h2 class="collection-title">Ganesh Chaturthi</h2>
+        <div class="collection">
+            <div class="d-item">
+                <img src="/images/Chaturthi/1.jpg" alt="Ganesh Item 1" class="main-image">
+                <img src="/images/Chaturthi/1.1.jpg" alt="Ganesh Item 1 Hover" class="hover-image">
+                <p>6INCH Eco-Friendly Buddhividhayak Ganesha</p>
+                <span class="price"><strike>₹1,599</strike> ₹1,299</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="d-item">
+                <img src="/images/Chaturthi/2.jpg" alt="Ganesh Item 2" class="main-image">
+                <img src="/images/Chaturthi/2.1.jpg" alt="Ganesh Item 2 Hover" class="hover-image">
+                <p>6INCH Sarpujaya Eco-Friendly Ganesha</p>
+                <span class="price">₹699</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="d-item">
+                <img src="/images/Chaturthi/3.jpg" alt="Ganesh Item 3" class="main-image">
+                <img src="/images/Chaturthi/3.1.jpg" alt="Ganesh Item 3 Hover" class="hover-image">
+                <p>6INCH Manomay Eco-Friendly Ganesha</p>
+                <span class="price"><strike>₹699</strike> ₹499</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="d-item">
+                <img src="/images/Chaturthi/4.jpg" alt="Ganesh Item 4" class="main-image">
+                <img src="/images/Chaturthi/4.1.jpg" alt="Ganesh Item 4 Hover" class="hover-image">
+                <p>6INCH Eco-Friendly Namasthetu Ganesha</p>
+                <span class="price"><strike>₹1,599</strike> ₹1,299</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="d-item">
+                <img src="/images/Chaturthi/5.jpg" alt="Ganesh Item 5" class="main-image">
+                <img src="/images/Chaturthi/5.1.jpg" alt="Ganesh Item 5 Hover" class="hover-image">
+                <p>6INCH Eco-Friendly Sarvadevata Ganesha</p>
+                <span class="price"><strike>₹1,599</strike> ₹1,299</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="d-item">
+                <img src="/images/Chaturthi/6.jpg" alt="Ganesh Item 6" class="main-image">
+                <img src="/images/Chaturthi/6.1.jpg" alt="Ganesh Item 6 Hover" class="hover-image">
+                <p>6INCH Eco-Friendly Sarvadevata Ganesha</p>
+                <span class="price"><strike>₹1,599</strike> ₹1,299</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL</button>
+    </section>
+
+        <!-- Ganpati Decoration Section -->
+    <section class="collection-container">
+        <h2 class="collection-title">Ganpati Decoration</h2>
+        <div class="collection">
+            <div class="d-item">
+                <div class="image-container">
+                    <img src="/images/Decoration/a.jpg" alt="Ganpati Decoration Item 1" class="main-image">
+                    <img src="/images/Decoration/a.1.jpg" alt="Ganpati Decoration Item 1 Hover" class="hover-image">
+                </div>
+                <div class="item-details">
+                    <p>Motichoor Ladoo Scented Candles Gift Box</p>
+                    <span class="price">₹499</span>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="d-item">
+                <div class="image-container">
+                    <img src="/images/Decoration/b.jpg" alt="Ganpati Decoration Item 2" class="main-image">
+                    <img src="/images/Decoration/b.1.jpg" alt="Ganpati Decoration Item 2 Hover" class="hover-image">
+                </div>
+                <div class="item-details">
+                    <p>Artificial Jasmine Flower And Pink Lotus Buds Backdrop Decoration</p>
+                    <span class="price"><strike>₹1999</strike> ₹1699</span>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="d-item">
+                <div class="image-container">
+                    <img src="/images/Decoration/c.jpg" alt="Ganpati Decoration Item 3" class="main-image">
+                    <img src="/images/Decoration/c.1.jpg" alt="Ganpati Decoration Item 3 Hover" class="hover-image">
+                </div>
+                <div class="item-details">
+                    <p>Colorful Decorated Pooja Thali 8INCH</p>
+                    <span class="price">₹799</span>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="d-item">
+                <div class="image-container">
+                    <img src="/images/Decoration/d.jpg" alt="Ganpati Decoration Item 4" class="main-image">
+                    <img src="/images/Decoration/d.1.jpg" alt="Ganpati Decoration Item 4 Hover" class="hover-image">
+                </div>
+                <div class="item-details">
+                    <p>Modak Scented Candles Gift Box</p>
+                    <span class="price">₹299</span>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL</button>
+    </section>
+
+    <!-- God Idols Section -->
+    <section class="collection-container">
+        <h2 class="collection-title">God Idols</h2>
+        <div class="collection">
+            <!-- Item 1 -->
+            <div class="d-item">
+                <img src="/images/Idols/first.jpg" alt="Regal Ganesha Samrat Idol" class="main-image">
+                <img src="/images/Idols/first.a.jpg" alt="Regal Ganesha Samrat Idol Hover" class="hover-image">
+                <p>Regal Ganesha Samrat Idol</p>
+                <span class="price">₹599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 2 -->
+            <div class="d-item">
+                <img src="/images/Idols/second.jpg" alt="Adiyogi Shiva Statue" class="main-image">
+                <img src="/images/Idols/second.a.jpg" alt="Adiyogi Shiva Statue Hover" class="hover-image">
+                <p>Adiyogi Shiva Statue</p>
+                <span class="price">₹299</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="d-item">
+                <img src="/images/Idols/Third.jpg" alt="Saraswati Maa Vidya Devi Idol for Gift/Puja" class="main-image">
+                <img src="/images/Idols/Third.a.jpg" alt="Saraswati Maa Vidya Devi Idol Hover" class="hover-image">
+                <p>Saraswati Maa Vidya Devi Idol for Gift/Puja</p>
+                <span class="price">₹599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 4 -->
+            <div class="d-item">
+                <img src="/images/Idols/fourth.jpg" alt="Vighnaharta Ganesha Idol for Gift/Puja" class="main-image">
+                <img src="/images/Idols/fourth.a.jpg" alt="Vighnaharta Ganesha Idol Hover" class="hover-image">
+                <p>Vighnaharta Ganesha Idol for Gift/Puja</p>
+                <span class="price">₹599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 5 -->
+            <div class="d-item">
+                <img src="/images/Idols/fifth.jpg" alt="Makhan Chor Krishna Idol for Gift/Puja" class="main-image">
+                <img src="/images/Idols/fifth.a.jpg" alt="Makhan Chor Krishna Idol Hover" class="hover-image">
+                <p>Makhan Chor Krishna Idol for Gift/Puja</p>
+                <span class="price">₹599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 6 -->
+            <div class="d-item">
+                <img src="/images/Idols/sixth.jpg" alt="Shakti Roop Durga Mata Idol for Gift/Puja" class="main-image">
+                <img src="/images/Idols/sixth.a.jpg" alt="Shakti Roop Durga Mata Idol Hover" class="hover-image">
+                <p>Shakti Roop Durga Mata Idol for Gift/Puja</p>
+                <span class="price">₹599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL</button>
+    </section>
+
+        <!-- Pooja Essentials Section -->
+    <section class="collection-container">
+        <h2 class="collection-title">Pooja Essentials</h2>
+        <div class="collection">
+            <!-- Item 1 -->
+            <div class="d-item">
+                <img src="/images/Essentials/1.jpg" alt="Gayatri Mantra Musical Chanting Speaker Box" class="main-image">
+                <img src="/images/Essentials/1.1.png" alt="Gayatri Mantra Musical Chanting Speaker Box Hover" class="hover-image">
+                <p>Gayatri Mantra Musical Chanting Speaker Box</p>
+                <span class="price"><strike>₹999</strike> ₹599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 2 -->
+            <div class="d-item">
+                <img src="/images/Essentials/2.jpg" alt="Hare Krishna Musical Chanting Mantra Speaker Box" class="main-image">
+                <img src="/images/Essentials/2.1.jpg" alt="Hare Krishna Musical Chanting Mantra Speaker Box Hover" class="hover-image">
+                <p>Hare Krishna Musical Chanting Mantra Speaker Box</p>
+                <span class="price"><strike>₹999</strike> ₹599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="d-item">
+                <img src="/images/Essentials/3.jpg" alt="Ek Onkar Devotional Chanting Mantra Speaker Box" class="main-image">
+                <img src="/images/Essentials/3.1.jpg" alt="Ek Onkar Devotional Chanting Mantra Speaker Box Hover" class="hover-image">
+                <p>Ek Onkar Devotional Chanting Mantra Speaker Box</p>
+                <span class="price"><strike>₹999</strike> ₹499</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 4 -->
+            <div class="d-item">
+                <img src="/images/Essentials/4.jpg" alt="Sai Mantra Musical Chanting Speaker Box" class="main-image">
+                <img src="/images/Essentials/4.1.jpg" alt="Sai Mantra Musical Chanting Speaker Box Hover" class="hover-image">
+                <p>Sai Mantra Musical Chanting Speaker Box</p>
+                <span class="price"><strike>₹999</strike> ₹499</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 5 -->
+            <div class="d-item">
+                <img src="/images/Essentials/5.jpg" alt="Gayatri Mantra Musical Chanting Speaker" class="main-image">
+                <img src="/images/Essentials/5.1.jpg" alt="Gayatri Mantra Musical Chanting Speaker Hover" class="hover-image">
+                <p>Gayatri Mantra Musical Chanting Speaker</p>
+                <span class="price"><strike>₹999</strike> ₹499</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 6 -->
+            <div class="d-item">
+                <img src="/images/Essentials/6.jpg" alt="Krishna Maha Mantra Musical Chanting Speaker Box" class="main-image">
+                <img src="/images/Essentials/6.1.jpg" alt="Krishna Maha Mantra Musical Chanting Speaker Box Hover" class="hover-image">
+                <p>Krishna Maha Mantra Musical Chanting Speaker Box</p>
+                <span class="price"><strike>₹999</strike> ₹499</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL</button>
+    </section>
+
+    <!-- Healing Crystals Section -->
+    <section class="collection-container">
+        <h2 class="collection-title">Healing Crystals</h2>
+        <div class="collection">
+            <!-- Item 1 -->
+            <div class="d-item">
+                <img src="/images/Crystals/first.jpg" alt="Rose Quartz Crystal Healing Bracelet | Love Stone" class="main-image">
+                <img src="/images/Crystals/first.a.jpg" alt="Rose Quartz Crystal Healing Bracelet | Love Stone Hover" class="hover-image">
+                <p>Rose Quartz Crystal Healing Bracelet | Love Stone</p>
+                <span class="price"><strike>₹699</strike> ₹499</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 2 -->
+            <div class="d-item">
+                <img src="/images/Crystals/second.jpg" alt="Money Magnet Healing Crystal Bracelet" class="main-image">
+                <img src="/images/Crystals/second.a.jpg" alt="Money Magnet Healing Crystal Bracelet Hover" class="hover-image">
+                <p>Money Magnet Healing Crystal Bracelet</p>
+                <span class="price">₹999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="d-item">
+                <img src="/images/Crystals/third.jpg" alt="9 Powerful Healing Crystals Tumble Stone Set" class="main-image">
+                <img src="/images/Crystals/Third.a.jpg" alt="9 Powerful Healing Crystals Tumble Stone Set Hover" class="hover-image">
+                <p>9 Powerful Healing Crystals Tumble Stone Set</p>
+                <span class="price"><strike>₹1299</strike> ₹999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 4 -->
+            <div class="d-item">
+                <img src="/images/Crystals/fourth.jpg" alt="Rose Quartz Crystal Healing Bracelet For Self Esteem & Self Love" class="main-image">
+                <img src="/images/Crystals/fourth.a.jpg" alt="Rose Quartz Crystal Healing Bracelet For Self Esteem & Self Love Hover" class="hover-image">
+                <p>Rose Quartz Crystal Healing Bracelet For Self Esteem & Self Love</p>
+                <span class="price"><strike>₹699</strike> ₹599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 5 -->
+            <div class="d-item">
+                <img src="/images/Crystals/fifth.jpg" alt="Amethyst Crystal Healing Bracelet | Protection & Spirituality" class="main-image">
+                <img src="/images/Crystals/fifth.a.jpg" alt="Amethyst Crystal Healing Bracelet | Protection & Spirituality Hover" class="hover-image">
+                <p>Amethyst Crystal Healing Bracelet | Protection & Spirituality</p>
+                <span class="price">₹599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL</button>
+    </section>
+
+    <!-- Limited Edition Section -->
+    <section class="collection-container">
+        <h2 class="collection-title">Limited Edition</h2>
+        <div class="collection">
+            <!-- Item 1 -->
+            <div class="d-item">
+                <img src="/images/Limited Edition/1.png" alt="Aesthetic Floral Urli With Diya" class="main-image">
+                <img src="/images/Limited Edition/1.1.jpg" alt="Aesthetic Floral Urli With Diya Hover" class="hover-image">
+                <p>Aesthetic Floral Urli With Diya</p>
+                <span class="price"><strike>₹1299</strike> ₹999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 2 -->
+            <div class="d-item">
+                <img src="/images/Limited Edition/2.jpg" alt="Stunning Gold Urli with Stand" class="main-image">
+                <img src="/images/Limited Edition/2.1.jpg" alt="Stunning Gold Urli with Stand Hover" class="hover-image">
+                <p>Stunning Gold Urli with Stand</p>
+                <span class="price">₹799</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="d-item">
+                <img src="/images/Limited Edition/3.png" alt="Handcrafted Brass Peacock Diya" class="main-image">
+                <img src="/images/Limited Edition/3.1.jpg" alt="Handcrafted Brass Peacock Diya Hover" class="hover-image">
+                <p>Handcrafted Brass Peacock Diya</p>
+                <span class="price"><strike>₹2999</strike> ₹699</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 4 -->
+            <div class="d-item">
+                <img src="/images/Limited Edition/4.jpg" alt="Handcrafted Antique Brass Fumer/Dhuni" class="main-image">
+                <img src="/images/Limited Edition/4.1.png" alt="Handcrafted Antique Brass Fumer/Dhuni Hover" class="hover-image">
+                <p>Handcrafted Antique Brass Fumer/Dhuni</p>
+                <span class="price"><strike>₹2999</strike> ₹2599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 5 -->
+            <div class="d-item">
+                <img src="/images/Limited Edition/5.jpg" alt="Astounding Lotus Diya Urli" class="main-image">
+                <img src="/images/Limited Edition/5.1.jpg" alt="Astounding Lotus Diya Urli Hover" class="hover-image">
+                <p>Astounding Lotus Diya Urli</p>
+                <span class="price"><strike>₹12999</strike> ₹999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL</button>
+    </section>
+
+    <!-- Evil Eye Section -->
+    <section class="collection-container">
+        <h2 class="collection-title">Evil Eye</h2>
+        <div class="collection">
+            <!-- Item 1 -->
+            <div class="d-item">
+                <img src="/images/Evil Eye/1.jpg" alt="Evil Eye Dream Catcher" class="main-image">
+                <img src="/images/Evil Eye/1.1.jpg" alt="Evil Eye Dream Catcher Hover" class="hover-image">
+                <p>Evil Eye Dream Catcher for Positive Energy and Protection</p>
+                <span class="price"><strike>₹699</strike> ₹499</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 2 -->
+            <div class="d-item">
+                <img src="/images/Evil Eye/2.jpg" alt="Feng Shui Blue Evil Eye Hanging" class="main-image">
+                <img src="/images/Evil Eye/2.1.jpg" alt="Feng Shui Blue Evil Eye Hanging Hover" class="hover-image">
+                <p>Feng Shui Blue Evil Eye Hanging</p>
+                <span class="price"><strike>₹699</strike> ₹499</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="d-item">
+                <img src="/images/Evil Eye/3.jpg" alt="Horse Shoe Good Luck Feng Shui Evil Eye Hanging" class="main-image">
+                <img src="/images/Evil Eye/3.1.jpg" alt="Horse Shoe Good Luck Feng Shui Evil Eye Hanging Hover" class="hover-image">
+                <p>Horse Shoe Good Luck Feng Shui Evil Eye Hanging</p>
+                <span class="price">₹699</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 4 -->
+            <div class="d-item">
+                <img src="/images/Evil Eye/4.jpg" alt="Evil Eye Horse Wall Hanging Protection Amulet" class="main-image">
+                <img src="/images/Evil Eye/4.1.jpg" alt="Evil Eye Horse Wall Hanging Protection Amulet Hover" class="hover-image">
+                <p>Evil Eye Horse Wall Hanging Protection Amulet</p>
+                <span class="price">₹699</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 5 -->
+            <div class="d-item">
+                <img src="/images/Evil Eye/5.jpg" alt="Hand-Painted Big Evil Eye Wall Decor Plate" class="main-image">
+                <img src="/images/Evil Eye/5.1.jpg" alt="Hand-Painted Big Evil Eye Wall Decor Plate Hover" class="hover-image">
+                <p>Hand-Painted Big Evil Eye Wall Decor Plate</p>
+                <span class="price">₹999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 6 -->
+            <div class="d-item">
+                <img src="/images/Evil Eye/6.jpg" alt="Hand-Painted Evil Eye Gold Wall Decor Plate" class="main-image">
+                <img src="/images/Evil Eye/6.1.jpg" alt="Hand-Painted Evil Eye Gold Wall Decor Plate Hover" class="hover-image">
+                <p>Hand-Painted Evil Eye Gold Wall Decor Plate</p>
+                <span class="price"><strike>₹1299</strike> ₹999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL</button>
+    </section>
+
+    <!-- Pooja Thali Set Section -->
+    <section class="collection-container">
+        <h2 class="collection-title">Pooja Thali Set</h2>
+        <div class="collection">
+            <!-- Item 1 -->
+            <div class="d-item">
+                <img src="/images/Pooja Thali set/a.jpg" alt="Elegant Silver Pooja Thali Set" class="main-image">
+                <img src="/images/Pooja Thali set/a.1.jpg" alt="Elegant Silver Pooja Thali Set Hover" class="hover-image">
+                <p>Elegant Silver Pooja Thali Set</p>
+                <span class="price"><strike>₹7,499</strike> ₹4,999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 2 -->
+            <div class="d-item">
+                <img src="/images/Pooja Thali Set/b.jpg" alt="Traditional Minakari Brass Peacock Pooja Thali Set" class="main-image">
+                <img src="/images/Pooja Thali Set/b.1.jpg" alt="Traditional Minakari Brass Peacock Pooja Thali Set Hover" class="hover-image">
+                <p>Traditional Minakari Brass Peacock Pooja Thali Set</p>
+                <span class="price">₹999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="d-item">
+                <img src="/images/Pooja Thali Set/c.jpg" alt="OM Colorful Pooja Thali 20cm" class="main-image">
+                <img src="/images/Pooja Thali Set/c.1.jpg" alt="OM Colorful Pooja Thali 20cm Hover" class="hover-image">
+                <p>OM Colorful Pooja Thali 20cm</p>
+                <span class="price">₹799</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 4 -->
+            <div class="d-item">
+                <img src="/images/Pooja Thali Set/d.jpg" alt="Traditional Gota Zari Pooja Thali 8"" class="main-image">
+                <img src="/images/Pooja Thali Set/d.1.jpg" alt="Traditional Gota Zari Pooja Thali 8" Hover" class="hover-image">
+                <p>Traditional Gota Zari Pooja Thali 8"</p>
+                <span class="price"><strike>₹999</strike> ₹499</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL</button>
+    </section>
+
+    <!-- Himalayan Salt Lamps Section -->
+    <section class="collection-container">
+        <h2 class="collection-title">Himalayan Salt Lamps</h2>
+        <div class="collection">
+            <!-- Item 1 -->
+            <div class="d-item">
+                <img src="/images/Himalayan Salt Lamps/1.jpg" alt="Natural Plug-In Himalayan Salt Lamp" class="main-image">
+                <img src="/images/Himalayan Salt Lamps/1.1.jpg" alt="Natural Plug-In Himalayan Salt Lamp Hover" class="hover-image">
+                <p>Natural Plug-In Himalayan Salt Lamp</p>
+                <span class="price"><strike>₹1,299</strike> ₹999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 2 -->
+            <div class="d-item">
+                <img src="/images/Himalayan Salt Lamps/2.jpg" alt="Floral Design Plug-In Himalayan Salt Lamp" class="main-image">
+                <img src="/images/Himalayan Salt Lamps/2.1.jpg" alt="Floral Design Plug-In Himalayan Salt Lamp Hover" class="hover-image">
+                <p>Floral Design Plug-In Himalayan Salt Lamp</p>
+                <span class="price">₹1599</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="d-item">
+                <img src="/images/Himalayan Salt Lamps/3.jpg" alt="Anahata Design Plug In Himalayan Salt Lamp" class="main-image">
+                <img src="/images/Himalayan Salt Lamps/3.1.jpg" alt="Anahata Design Plug In Himalayan Salt Lamp Hover" class="hover-image">
+                <p>Anahata Design Plug In Himalayan Salt Lamp</p>
+                <span class="price">₹1299</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 4 -->
+            <div class="d-item">
+                <img src="/images/Himalayan Salt Lamps/4.jpg" alt="Pyramid Evil Eye Himalayan Salt Lamp" class="main-image">
+                <img src="/images/Himalayan Salt Lamps/4.1.jpg" alt="Pyramid Evil Eye Himalayan Salt Lamp Hover" class="hover-image">
+                <p>Pyramid Evil Eye Himalayan Salt Lamp</p>
+                <span class="price"><strike>₹3,299</strike> ₹1,299</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 5 -->
+            <div class="d-item">
+                <img src="/images/Himalayan Salt Lamps/5.jpg" alt="Himalayan Pink Salt Cylindrical Glow Lamp" class="main-image">
+                <img src="/images/Himalayan Salt Lamps/5.1.jpg" alt="Himalayan Pink Salt Cylindrical Glow Lamp Hover" class="hover-image">
+                <p>Himalayan Pink Salt Cylindrical Glow Lamp</p>
+                <span class="price">₹2,399 <strike>₹2,999</strike></span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <!-- Item 6 -->
+            <div class="d-item">
+                <img src="/images/Himalayan Salt Lamps/6.jpg" alt="Himalayan Pink Salt Pyramid Glow Lamp" class="main-image">
+                <img src="/images/Himalayan Salt Lamps/6.1.jpg" alt="Himalayan Pink Salt Pyramid Glow Lamp Hover" class="hover-image">
+                <p>Himalayan Pink Salt Pyramid Glow Lamp</p>
+                <span class="price"><strike>₹12,999</strike> ₹999</span>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL</button>
+    </section>
+
+    
+    <!-- Review Section -->
+        <div class="review-section">
+            <div class="average-rating">
+                <div class="rating-container">
+                    <h2>4.1</h2>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-count">1,669 reviews</p>
+                </div>
+                <p>Powered By Google</p>
+            </div>
+            <div class="reviews-carousel">
+                <!-- Add arrow buttons for navigation -->
+            <button class="carousel-arrow left-arrow"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-wrapper">
+                <div class="review">
+                    <div class="reviewer-info">
+                        <div class="reviewer-initial">R</div>
+                        <div class="reviewer-details">
+                            <strong>Ritika Mathur</strong>
+                            <span>21 days ago</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Are these rings in Pure silver? Also are the gemstones authentic and certified?</p>
+                </div>
+                <div class="review">
+                    <div class="reviewer-info">
+                        <img src="/images/Review/unnamed (22).png" alt="Priyanka Singh">
+                        <div class="reviewer-details">
+                            <strong>Priyanka Singh</strong>
+                            <span>21 days ago</span>
+                        </div>
+                    </div>
+                    <p class="review-text">This looks amazing also there are positive changes.</p>
+                </div>
+                <div class="review">
+                    <div class="reviewer-info">
+                        <img src="/images/Review/unnamed (33).png" alt="Shweta Jangpangi">
+                        <div class="reviewer-details">
+                            <strong>Shweta Jangpangi</strong>
+                            <span>5 months ago</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Product is good.. It would have been better if I had received the product in a box..keep growing 👍</p>
+                </div>
+                <div class="review">
+                    <div class="reviewer-info">
+                        <img src="/images/Review/unnamed (23).png" alt="Moumita Paul ">
+                        <div class="reviewer-details">
+                            <strong>Moumita Paul</strong>
+                            <span>11 months ago</span>
+                        </div>
+                    </div>
+                    <p class="review-text">It's feels very positive energy and loving this vibes❤️💝</p>
+                </div>
+                <div class="review">
+                    <div class="reviewer-info">
+                        <img src="/images/Review/unnamed (37).png" alt="Deepshikha Shanker">
+                        <div class="reviewer-details">
+                            <strong>Deepshikha Shanker</strong>
+                            <span>8 days ago</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Are the dimensions mentioned in inches?</p>
+                </div>
+                <div class="review">
+                    <div class="reviewer-info">
+                        <img src="/images/Review/unnamed (54).png" alt="Anirban Roy ">
+                        <div class="reviewer-details">
+                            <strong>Anirban Roy </strong>
+                            <span>4 months ago</span>
+                        </div>
+                    </div>
+                    <p class="review-text">Amazing product and work well.</p>
+                </div>
+            </div>
+            <button class="carousel-arrow right-arrow"><i class="fas fa-chevron-right"></i></button>
+                <!-- Add more reviews as needed -->
+        </div>
+            <button class="write-review">WRITE A REVIEW</button>
+        </div>
+    </div>
+
+    <!--Custom-section-->
+    <div class="custom-section" id="custom-section">
+        <p>My Pooja Box - A One-stop Festive Decor & Gifting Shop</p>
+        <p class="about">Being a one-stop pooja samagri online store in India, My Pooja Box bridges the gap between devotees and devotion. We have sorted all your devotional needs by putting forth a wide assortment of products by making it easier for you buy pooja items on...</p>
+        <button onclick="closeDiv()">Read More</button>
+      </div>
+
+    <div class="info-section" id="info-section">  
+    <!-- Speedy Delivery -->
+      <div class="info-item">
+      <img src="/images/icons/1.png" alt="Speedy Delivery">
+      <p>Speedy delivery</p>
+      </div>
+
+  <!-- Cash on Delivery -->
+     <div class="info-item">
+     <img src="/images/icons/2.png" alt="Cash on Delivery">
+     <p>Cash on delivery</p>
+     </div>
+
+  <!-- Easy Returns -->
+     <div class="info-item">
+     <img src="/images/icons/3.png" alt="Easy Returns">
+     <p>Easy returns</p>
+     </div>
+    </div>
+  <!--footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo-section">
+                <img src="/images/icons/4.png" alt="Footer Icon" class="footer-icon">
+                <div class="social-media">
+                    <a href="#"><img src="/images/icons/5.png" alt="Facebook"></a>
+                    <a href="#"><img src="/images/icons/6.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section information-section">
+                <h3>INFORMATION</h3>
+                <ul>
+                    <li><a href="#">Track your Order</a></li>
+                    <li><a href="#">Returns and Refunds</a></li>
+                    <li><a href="#">Holiday List</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Aartis</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Deals & Coupons</a></li>
+                </ul>
+            </div>
+            <div class="footer-section about-section">
+                <h3>ABOUT MY POOJA BOX</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Corporate Enquiry</a></li>
+                    <li><a href="#">Exchange/Cancel My Order</a></li>
+                </ul>
+            </div>
+            <div class="footer-section customer-care-section">
+                <h3>CUSTOMER CARE</h3>
+                <ul>
+                    <li>Phone: +91 8010288882 | +91 8010188881</li>
+                    <li>Email: orders@mypoojabox.com</li>
+                    <li>Address: My Pooja Box, Jagat Complex, 100 Ft Rd, Ghitorni, New Delhi 110030</li>
+                </ul>
+            </div>
+            <div class="chat-icon">
+                <img src="/images/icons/7.png" alt="Chat Icon">
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- JS for Navbar Toggle -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Link to JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
